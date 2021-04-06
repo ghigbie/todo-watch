@@ -18,12 +18,24 @@ struct ContentView: View {
                 Button{
                     guard taskContent.isEmpty == false
                         else{ return }
+                    let task = Task(text: taskContent, id: UUID())
+                    tasks.append(task)
+                    taskContent = ""
                 } label: {
                     Image(systemName: "plus")
                     }
                 }
+            List {
+                ForEach(0..<tasks.count, id: \.self){i in
+                    NavigationLink(
+                        destination: DetailView(text: tasks[i].text)){
+                        Text(tasks[i].text)
+                    }
+                }
             }
             Spacer()
+            }
+           // Spacer()
         }
     }
 

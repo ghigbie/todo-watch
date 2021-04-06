@@ -18,6 +18,7 @@
 		DB70703D261565F400D35484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB70703C261565F400D35484 /* Assets.xcassets */; };
 		DB707040261565F400D35484 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB70703F261565F400D35484 /* Preview Assets.xcassets */; };
 		DB7070542615692200D35484 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7070532615692200D35484 /* Task.swift */; };
+		DB707059261C03D600D35484 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB707058261C03D600D35484 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		DB707041261565F400D35484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB707042261565F400D35484 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		DB7070532615692200D35484 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DB707058261C03D600D35484 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				DB707042261565F400D35484 /* PushNotificationPayload.apns */,
 				DB70703E261565F400D35484 /* Preview Content */,
 				DB7070532615692200D35484 /* Task.swift */,
+				DB707058261C03D600D35484 /* DetailView.swift */,
 			);
 			path = "ToDoList WatchKit Extension";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				DB707037261565F300D35484 /* NotificationController.swift in Sources */,
 				DB707035261565F300D35484 /* ContentView.swift in Sources */,
 				DB70703B261565F300D35484 /* ComplicationController.swift in Sources */,
+				DB707059261C03D600D35484 /* DetailView.swift in Sources */,
 				DB707033261565F300D35484 /* ToDoListApp.swift in Sources */,
 				DB7070542615692200D35484 /* Task.swift in Sources */,
 				DB707039261565F300D35484 /* NotificationView.swift in Sources */,

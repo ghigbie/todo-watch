@@ -17,27 +17,29 @@ struct ContentView: View {
                 TextField("Enter a Task", text: $taskContent)
                 Button{
                     guard taskContent.isEmpty == false
-                        else{ return }
+                    else{ return }
                     let task = Task(text: taskContent, id: UUID())
                     tasks.append(task)
                     taskContent = ""
                 } label: {
                     Image(systemName: "plus")
-                    }
                 }
+                    .fixedSize()
+                    .buttonStyle(BorderedButtonStyle(tint: .orange))
+            }
             List {
                 ForEach(0..<tasks.count, id: \.self){i in
                     NavigationLink(
-                        destination: DetailView(text: tasks[i].text)){
+                        destination: DetailView(task: tasks[i], index: i)){
                         Text(tasks[i].text)
+                            .lineLimit(1)
                     }
                 }
             }
             Spacer()
-            }
-           // Spacer()
         }
     }
+}
 
 
 struct ContentView_Previews: PreviewProvider {

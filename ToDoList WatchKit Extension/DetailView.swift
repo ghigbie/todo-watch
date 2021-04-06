@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct DetailView: View {
-    var text: String;
+    let task: Task;
+    let index: Int;
     
     var body: some View {
-        Text(text)
+        VStack{
+            Text(task.text)
+            Spacer()
+        }
+        .navigationTitle("Task \(index + 1)")
+        
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(text: "moo")
+        let testTask: Task = Task(text: "This is some test text that goes moo moo moo moo moo oik oink", id: UUID())
+        DetailView(task: testTask, index: 0)
     }
 }
